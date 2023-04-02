@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/assets/leaflet.css">
+    <link rel="stylesheet" href="./style/app.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <h1>IP Address Tracker</h1>
+            </div>
+            <div class="ip">
+                <p>
+                    192.212.174.101
+                </p>
+                <button class="ip-search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <header class="wrapper">
+                <h2><span class="block light">Your IP address:</span> <span class="ip-address block data">192.212.174.101</span></h2>
+                <p class="city-data">
+                    <span class="block light">Country:</span>
+                    <span class="block data city"></span>
+                </p>
+                <p class="city-code">
+                    <span class="block light">Country code:</span>
+                    <span class="block data country">
+                        DE
+                    </span>
+                </p>
+                <p class="city-region">
+                    <span class="block light">Region:</span>
+                    <span class="block data region"></span>
+                </p>
+                <p class="city-timezone">
+                    <span class="block light">Timezone</span>
+                    <span class="block data timezone">UTC - 05:00</span>
+                </p>
+               
+            </header>
+            <section>
+                <div id="map"></div>
+            </section>
+        </article>
+        <article>
+            <header class="wrapper">
+                <h3>Weather</h3>
+                <p class="weather-date">
+                    <span class="block light">Date:</span>
+                    <span class="data block">03.03.2023</span>
+                </p>
+                <p class="weather-temp">
+                    <span class="icon">
+                        icon
+                    </span> 
+                    <span class="light">
+                        Temp:
+                    </span>
+                    <span class="block">
+                        08°
+                    </span>
+                </p>
+                <p class="weather-wind">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+                    </span>
+                </p>
+            </header>
+            <section class="wrapper">
+                <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+            </section>
+        </article>
+    </main>
+    <footer></footer>
+    <script type="module" src="./script/chart.js"></script>
+    <script type="module" src="./script/leaflet.js"></script>
+    <script type="module" src="./script/app.js" async></script>
+</body>
+</html>
